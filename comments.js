@@ -20,8 +20,3 @@ app.post('/comments', (req, res) => {
     comments.push(comment);
     res.status(201).json(comment);
 });
-
-//start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
